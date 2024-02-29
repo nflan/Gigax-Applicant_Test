@@ -1,0 +1,98 @@
+{
+  "npc_actions": [
+    {
+      "npc_name": "SecurityMale",
+      "action": "move",
+      "location_name": "ServerRoom"
+    },
+    {
+      "npc_name": "DeveloperFemale",
+      "action": "inspect",
+      "object_name": "Fridge",
+      "location_name": "Kitchen"
+    },
+    {
+      "npc_name": "MaintenanceMale",
+      "action": "repair",
+      "object_name": "RollingTV",
+      "location_name": "SalesFloor"
+    },
+    {
+      "npc_name": "BusinessFemale",
+      "action": "move",
+      "location_name": "CameraStudio"
+    },
+    {
+      "npc_name": "SecurityMale",
+      "action": "inspect",
+      "location_name": "ServerRoom",
+      "object_name": "ServerCabinet01"
+    },
+    {
+      "npc_name": "DeveloperFemale",
+      "action": "say",
+      "content": "Who took my sandwich? HR will hear about this!"
+    },
+    {
+      "npc_name": "MaintenanceMale",
+      "action": "move",
+      "location_name": "Kitchen"
+    },
+    {
+      "npc_name": "BusinessFemale",
+      "action": "say",
+      "content": "Enough with work! I'm going to play some games!"
+    },
+    {
+      "npc_name": "SecurityMale",
+      "action": "say",
+      "content": "Wait... Why is there cake on the server rack?"
+    },
+    {
+      "npc_name": "DeveloperFemale",
+      "action": "move",
+      "object_name": "Desk",
+      "location_name": "Reception"
+    },
+    {
+      "npc_name": "MaintenanceMale",
+      "action": "say",
+      "target_name": "DeveloperFemale",
+      "content": "Wait! I'm sorry! I didn't know it was your sandwich!"
+    },
+    {
+      "npc_name": "BusinessFemale",
+      "action": "play",
+      "object_name": "ArcadeMachine",
+      "location_name": "CameraStudio"
+    },
+    {
+      "npc_name": "SecurityMale",
+      "action": "move",
+      "location_name": "Reception",
+      "object_name": "Desk"
+    },
+    {
+      "npc_name": "DeveloperFemale",
+      "action": "say",
+      "target_name": "Receptionist",
+      "content": "Someone took my sandwich again! Where is Rebecca from HR?"
+    },
+    {
+      "npc_name": "MaintenanceMale",
+      "action": "eat",
+      "object_name": "Cake"
+    },
+    {
+      "npc_name": "BusinessFemale",
+      "action": "move",
+      "location_name": "CEOOffice",
+      "object_name": "Desk"
+    },
+    {
+      "npc_name": "MaintenanceMale",
+      "action": "say",
+      "content": "Might as well eat this cake before I get in trouble."
+    }
+  ]
+}
