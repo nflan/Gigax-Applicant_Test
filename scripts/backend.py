@@ -52,16 +52,3 @@ async def get_data():
 async def translate_action(action: NPCAction):
     await data_queue.put(action)
     return {"message": "Data added successfully"}
-
-# Server-side event (SSE) endpoint for real-time updates
-@app.get("/updates")
-async def updates(response: Response):
-    async def event_generator():
-        while True:
-            if not data_queue.empty():
-                data = await data_queue.get()
-                yield f"data: {data}\n\n"
-            else:
-                await asyncio.sleep(1)
-
-    return StreamingResponse(event_generator(), media_type="text/event-stream")

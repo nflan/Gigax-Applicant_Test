@@ -39,13 +39,24 @@ But I gave my best to have a Proof of Concept in only 3 days without any knowled
 - have something that works (at least with the given Json).
 - have shown my motivation by working 35 hours in 3 days.
 
+Way of improvement:
+- Json checks.
+- Pydantic inherit classes:
+    - One parent: npc_name / action
+    - One class per action with target / location_name / object_name depending of the action.
+- Add enums for actions / locations / etc.
+- Add websocket to check server informations and not flooding each second.
+- Set up Obstacle / Nav Meshes depending of the movement of an NPC to make them avoidable for others.
+- Do not use ThirdPersonScript for NPC. Mostly used for controlable character.
+
+
 I met some troubles with:
 - NPC collision detection:
     - I tried to add a raycasting solution to avoid collision between NPCs but it was not a success.
 - Animations:
     - I've used movements from a Unity Tutorial so when I tried to add the press button animation, it was hard to handle.
-- Speechbubble:
-    - what an user-friendly thing.
+- Speechbubble (text box when NPC are talking):
+    - it was tricky to deal with it. Creating a canva, resizing, adding a text, adding an object in the bakc to create the white background...
     - they only works in front of the NPC.
     - I took time to understand and handle it.
 - Tags or names:

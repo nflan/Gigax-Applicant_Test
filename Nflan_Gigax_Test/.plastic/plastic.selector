@@ -1,4 +1,0 @@
-repository "gig-ax_test@Lord_Then@cloud"
-  path "/"
-    br "/main"
-    co "/main"
